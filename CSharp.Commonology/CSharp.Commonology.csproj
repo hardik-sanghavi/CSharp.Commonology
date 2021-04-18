@@ -5,6 +5,11 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Hardik Sanghavi</Authors>
     <Company />
+    <Description>C# Common extension and methods</Description>
+    <RepositoryUrl>https://github.com/Sanghavi-Hardik/CSharp.Commonology</RepositoryUrl>
+    <Copyright />
+    <PackageTags>Common Methods</PackageTags>
+    <PackageLicenseExpression></PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>
