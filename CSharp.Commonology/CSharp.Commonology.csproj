@@ -6,10 +6,12 @@
     <Authors>Hardik Sanghavi</Authors>
     <Company />
     <Description>C# Common extension and methods</Description>
-    <RepositoryUrl>https://github.com/Sanghavi-Hardik/CSharp.Commonology</RepositoryUrl>
+    <RepositoryUrl>https://github.com/hardik-sanghavi/CSharp.Commonology</RepositoryUrl>
     <Copyright />
     <PackageTags>Common Methods</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
+    <Version>1.0.1</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
 </Project>

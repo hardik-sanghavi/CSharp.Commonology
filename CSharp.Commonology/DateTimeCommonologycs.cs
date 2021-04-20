@@ -82,9 +82,45 @@ namespace CSharp.Commonology
         /// <param name="timeZoneId">The time zone to convert dateTime to.</param>
         /// <param name="formate">The formate of string. If pass null it use MM/dd/yyyy hh:mm tt</param>
         /// <returns></returns>
-        public static string ToLocalDateTimeString(this DateTime? dateTime, string timeZoneId, string formate = null)
+        public static string ToLocalDateTimeString(this DateTime? dateTime, string timeZoneId, string formate = "MM/dd/yyyy hh:mm tt")
         {
-            return dateTime.HasValue ? dateTime.Value.ToLocalDateTime(timeZoneId).ToString(formate ?? "MM/dd/yyyy hh:mm tt") : string.Empty;
+            return dateTime.HasValue ? dateTime.Value.ToLocalDateTime(timeZoneId).ToString(formate) : string.Empty;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dateTime">The UTC date and time to convert.</param>
+        /// <param name="timeZoneId">The time zone to convert dateTime to.</param>
+        /// <param name="formate">The formate of datetime to convert.</param>
+        /// <returns></returns>
+        public static string ToLocalDateTimeString(this DateTime? dateTime, string timeZoneId, EnumCommonology.DateTimeForamte formate)
+        {
+            return dateTime.HasValue ? dateTime.Value.ToLocalDateTime(timeZoneId).ToString(formate.GetAttribute<DateTimeAttribute>()?.Value) : string.Empty;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dateTime">The UTC date to convert.</param>
+        /// <param name="timeZoneId">The time zone to convert date to.</param>
+        /// <param name="formate">The formate of string. If pass null it use MM/dd/yyyy</param>
+        /// <returns></returns>
+        public static string ToLocalDateString(this DateTime? dateTime, string timeZoneId, string formate = "MM/dd/yyyy")
+        {
+            return dateTime.HasValue ? dateTime.Value.ToLocalDateTime(timeZoneId).ToString(formate) : string.Empty;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dateTime">The UTC date to convert.</param>
+        /// <param name="timeZoneId">The time zone to convert date to.</param>
+        /// <param name="formate">The formate of date to convert.</param>
+        /// <returns></returns>
+        public static string ToLocalDateString(this DateTime? dateTime, string timeZoneId, EnumCommonology.DateTimeForamte formate)
+        {
+            return dateTime.HasValue ? dateTime.Value.ToLocalDateTime(timeZoneId).ToString(formate.GetAttribute<DateAttribute>()?.Value) : string.Empty;
         }
 
         /// <summary>
