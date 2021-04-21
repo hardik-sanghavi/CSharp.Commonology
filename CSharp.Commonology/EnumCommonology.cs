@@ -7,22 +7,40 @@ using System.Text;
 
 namespace CSharp.Commonology
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class EnumCommonology
     {
+        /// <summary>
+        /// Formate of different type of datetimes
+        /// </summary>
         public enum DateTimeForamte
         {
+            /// <summary>
+            /// Date formate: dd/MM/yyyy, DateTime Formate: dd/MM/yyyy hh:mm tt
+            /// </summary>
             [Date("dd/MM/yyyy")]
             [DateTime("dd/MM/yyyy hh:mm tt")]
             ddMMyyyy,
 
+            /// <summary>
+            /// Date formate: MM/dd/yyyy, DateTime Formate: MM/dd/yyyy hh:mm tt
+            /// </summary>
             [Date("MM/dd/yyyy")]
             [DateTime("MM/dd/yyyy hh:mm tt")]
             MMddyyyy,
 
+            /// <summary>
+            /// Date formate: dd MMMM, yyyy, DateTime Formate: dd MMMM, yyyy
+            /// </summary>
             [Date("dd MMMM, yyyy")]
             [DateTime("dd MMMM, yyyy hh:mm tt")]
             ddMMyyyyIncludehMonth,
 
+            /// <summary>
+            /// Date formate: MM/dd/yyyy, DateTime Formate: MM/dd/yyyy hh:mm tt
+            /// </summary>
             [Date("MMMM dd, yyyy")]
             [DateTime("MMMM dd, yyyy hh:mm tt")]
             MMddyyyyIncludehMonth,
@@ -43,7 +61,7 @@ namespace CSharp.Commonology
         }
 
         /// <summary>
-        /// Get the value of Display attribute of Enum e.g. [Display("First Name")] 
+        /// Get the value of Display attribute of Enum e.g. [Display(Name = "First Name")] 
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
@@ -53,13 +71,23 @@ namespace CSharp.Commonology
             return attribute == null ? value.ToString() : attribute.Name;
         }
 
+        /// <summary>
+        /// Get the value of Description attribute of Enum e.g. [Description("First Name")] 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static string ToDescription(this Enum value)
         {
             var attribute = value.GetAttribute<DescriptionAttribute>();
             return attribute == null ? value.ToString() : attribute.Description;
         }
 
-        public static dynamic ToSelectList<TEnum>(this TEnum enumObj)
+        /// <summary>
+        /// Get the dynamic list of enum values
+        /// </summary>
+        /// <param name="enumObj">enum type</param>
+        /// <returns></returns>
+        public static dynamic ToDynamicList<TEnum>(this TEnum enumObj)
            where TEnum : struct, IComparable, IFormattable, IConvertible
         {
             var values = from TEnum e in Enum.GetValues(typeof(TEnum))

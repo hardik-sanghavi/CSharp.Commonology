@@ -5,13 +5,18 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Hardik Sanghavi</Authors>
     <Company />
-    <Description>C# Common extension and methods</Description>
+    <Description>C# Common extensions and methods.</Description>
     <RepositoryUrl>https://github.com/hardik-sanghavi/CSharp.Commonology</RepositoryUrl>
     <Copyright />
-    <PackageTags>Common Methods</PackageTags>
+    <PackageTags>CommonExtensions CommonMethods CSharpCommonology Commonology</PackageTags>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Add some other functions</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\Project\CSharp.Commonology\CSharp.Commonology\CSharp.Commonology.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

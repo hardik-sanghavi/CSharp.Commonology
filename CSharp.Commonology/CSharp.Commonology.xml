@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharp.Commonology</name>
+    </assembly>
+    <members>
+        <member name="T:CSharp.Commonology.DateTimeCommonology">
+            <summary>
+            Different types of common extension methods and function regarding to DateTime
+            </summary>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateTime(System.DateTime,System.String)">
+            <summary>
+            Converts the time in a (UTC) to specified time zone.
+            </summary>
+            <param name="dateTime">UTC DateTime which need to convert into specific timezone.</param>
+            <param name="timeZoneId">TimeZone Id in which need to convert. Use timezone StandardName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToUTCDateTime(System.DateTime,System.String)">
+            <summary>
+             Converts the time in a specified time zone to (UTC).
+            </summary>
+            <param name="dateTime"></param>
+            <param name="timeZoneId">TimeZone Id from which need to convert. Use timezone StandardName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ConvertToTimeZoneTime(System.DateTime,System.String,System.String)">
+            <summary>
+            Convert the one time zone to other time zone.
+            </summary>
+            <param name="dateTime"></param>
+            <param name="sourceTimeZoneId">TimeZoneId which need to convert. Use timezone StandardName.</param>
+            <param name="destinationTimeZoneId">TimeZoneId in which need to convert.  Use timezone StandardName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateTimeString(System.Nullable{System.DateTime},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date and time to convert.</param>
+            <param name="timeZoneId">The time zone to convert dateTime to.</param>
+            <param name="formate">The formate of string. If pass null it use MM/dd/yyyy hh:mm tt</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateTimeString(System.DateTime,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date and time to convert.</param>
+            <param name="timeZoneId">The time zone to convert dateTime to.</param>
+            <param name="formate">The formate of string. If pass null it use MM/dd/yyyy hh:mm tt</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateTimeString(System.Nullable{System.DateTime},System.String,CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date and time to convert.</param>
+            <param name="timeZoneId">The time zone to convert dateTime to.</param>
+            <param name="formate">The formate of datetime to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateTimeString(System.DateTime,System.String,CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date and time to convert.</param>
+            <param name="timeZoneId">The time zone to convert dateTime to.</param>
+            <param name="formate">The formate of datetime to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateString(System.Nullable{System.DateTime},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date to convert.</param>
+            <param name="timeZoneId">The time zone to convert date to.</param>
+            <param name="formate">The formate of string. If pass null it use MM/dd/yyyy</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateString(System.DateTime,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date to convert.</param>
+            <param name="timeZoneId">The time zone to convert date to.</param>
+            <param name="formate">The formate of string. If pass null it use MM/dd/yyyy</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateString(System.Nullable{System.DateTime},System.String,CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date to convert.</param>
+            <param name="timeZoneId">The time zone to convert date to.</param>
+            <param name="formate">The formate of date to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToLocalDateString(System.DateTime,System.String,CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The UTC date to convert.</param>
+            <param name="timeZoneId">The time zone to convert date to.</param>
+            <param name="formate">The formate of date to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDateTimeString(System.Nullable{System.DateTime},CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The date and time to convert.</param>
+            <param name="formate">The formate of datetime to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDateTimeString(System.DateTime,CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The date and time to convert.</param>
+            <param name="formate">The formate of datetime to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDateString(System.Nullable{System.DateTime},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The date to convert.</param>
+            <param name="formate">The formate of string. If pass null it use MM/dd/yyyy</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDateString(System.DateTime,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The date to convert.</param>
+            <param name="formate">The formate of string. If pass null it use MM/dd/yyyy</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDateString(System.Nullable{System.DateTime},CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The date to convert.</param>
+            <param name="formate">The formate of date to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDateString(System.DateTime,CSharp.Commonology.EnumCommonology.DateTimeForamte)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime">The date to convert.</param>
+            <param name="formate">The formate of date to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToUnixTimestamp(System.DateTime)">
+            <summary>
+            Convert the datetime to Unix TimeStamp
+            </summary>
+            <param name="dateTime"></param>
+            <returns>Returns the number of seconds that have elapsed since 1970-01-01T00:00:00Z.</returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ConvrtUnixToDate(System.Double)">
+            <summary>
+            Convert the Unix TimeStamp seconds to UTC datetime
+            </summary>
+            <param name="unixMS"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.ToDisplayRelativeAgoTime(System.DateTime)">
+            <summary>
+            Get the string for the Ago time like 5 minutes ago, 1 day ago etc.
+            </summary>
+            <param name="dateTime">UTC Datetime to calculate the ago time based on.</param>
+            <returns></returns>
+        </member>
+        <member name="T:CSharp.Commonology.EnumCommonology">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CSharp.Commonology.EnumCommonology.DateTimeForamte">
+            <summary>
+            Formate of different type of datetimes
+            </summary>
+        </member>
+        <member name="F:CSharp.Commonology.EnumCommonology.DateTimeForamte.ddMMyyyy">
+            <summary>
+            Date formate: dd/MM/yyyy, DateTime Formate: dd/MM/yyyy hh:mm tt
+            </summary>
+        </member>
+        <member name="F:CSharp.Commonology.EnumCommonology.DateTimeForamte.MMddyyyy">
+            <summary>
+            Date formate: MM/dd/yyyy, DateTime Formate: MM/dd/yyyy hh:mm tt
+            </summary>
+        </member>
+        <member name="F:CSharp.Commonology.EnumCommonology.DateTimeForamte.ddMMyyyyIncludehMonth">
+            <summary>
+            Date formate: dd MMMM, yyyy, DateTime Formate: dd MMMM, yyyy
+            </summary>
+        </member>
+        <member name="F:CSharp.Commonology.EnumCommonology.DateTimeForamte.MMddyyyyIncludehMonth">
+            <summary>
+            Date formate: MM/dd/yyyy, DateTime Formate: MM/dd/yyyy hh:mm tt
+            </summary>
+        </member>
+        <member name="M:CSharp.Commonology.EnumCommonology.GetAttribute``1(System.Enum)">
+            <summary>
+            Generic method to get any type of attribute of Enums
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.EnumCommonology.ToDisplayName(System.Enum)">
+            <summary>
+            Get the value of Display attribute of Enum e.g. [Display(Name = "First Name")] 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.EnumCommonology.ToDescription(System.Enum)">
+            <summary>
+            Get the value of Description attribute of Enum e.g. [Description("First Name")] 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.EnumCommonology.ToDynamicList``1(``0)">
+            <summary>
+            Get the dynamic list of enum values
+            </summary>
+            <param name="enumObj">enum type</param>
+            <returns></returns>
+        </member>
+        <member name="T:CSharp.Commonology.ListCommonology">
+            <summary>
+            Different types of common extension methods and function regarding to DateTime
+            </summary>
+        </member>
+        <member name="M:CSharp.Commonology.ListCommonology.AnyItem``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether source is not null and has any element.
+            </summary>
+            <typeparam name="TSource">The type of the elements of source.</typeparam>
+            <param name="source">System.Collections.Generic.IEnumerable`1 whose elements to apply the predicate</param>
+            <returns>true if element not null and has any element.</returns>
+        </member>
+        <member name="M:CSharp.Commonology.ListCommonology.AnyItem``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">
+            <summary>
+            Determines whether source is not null and has any element.
+            </summary>
+            <typeparam name="TSource">The type of the elements of source.</typeparam>
+            <param name="source">System.Collections.Generic.IEnumerable`1 whose elements to apply the predicate to</param>
+            <param name="predicate">A function to test each element for a condition.</param>
+            <returns>true if element not null and has any element which is pass the test in the specified predicate.</returns>
+        </member>
+    </members>
+</doc>
