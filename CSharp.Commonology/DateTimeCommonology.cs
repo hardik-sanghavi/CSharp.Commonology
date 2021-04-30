@@ -313,5 +313,18 @@ namespace CSharp.Commonology
                 return years <= 1 ? "1 year ago" : years + " years ago";
             }
         }
+
+        /// <summary>
+        /// Get the true of false value if date is between the start date and end date
+        /// </summary>
+        /// <param name="sourceDateTime">Datetime which need to check</param>
+        /// <param name="startDateTime">A start date time</param>
+        /// <param name="endDateTime">A end date time</param>
+        /// <param name="includeBothDate">if true than start and end date also included for check</param>
+        /// <returns></returns>
+        public static bool IsBetween(this DateTime sourceDateTime, DateTime startDateTime, DateTime endDateTime, bool includeBothDate = false)
+        {
+            return includeBothDate ? sourceDateTime >= startDateTime && sourceDateTime <= endDateTime : sourceDateTime > startDateTime && sourceDateTime < endDateTime;
+        }        
     }
 }
