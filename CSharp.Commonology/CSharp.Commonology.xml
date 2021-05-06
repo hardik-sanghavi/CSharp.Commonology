@@ -175,6 +175,16 @@
             <param name="dateTime">UTC Datetime to calculate the ago time based on.</param>
             <returns></returns>
         </member>
+        <member name="M:CSharp.Commonology.DateTimeCommonology.IsBetween(System.DateTime,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            Get the true of false value if date is between the start date and end date
+            </summary>
+            <param name="sourceDateTime">Datetime which need to check</param>
+            <param name="startDateTime">A start date time</param>
+            <param name="endDateTime">A end date time</param>
+            <param name="includeBothDate">if true than start and end date also included for check</param>
+            <returns></returns>
+        </member>
         <member name="T:CSharp.Commonology.EnumCommonology">
             <summary>
             
@@ -255,6 +265,39 @@
             <param name="source">System.Collections.Generic.IEnumerable`1 whose elements to apply the predicate to</param>
             <param name="predicate">A function to test each element for a condition.</param>
             <returns>true if element not null and has any element which is pass the test in the specified predicate.</returns>
+        </member>
+        <member name="T:CSharp.Commonology.StringCommonology">
+            <summary>
+            Different types of common extension methods and function regarding to string
+            </summary>
+        </member>
+        <member name="M:CSharp.Commonology.StringCommonology.ToLowerWithTrim(System.String)">
+            <summary>
+            Return the lower string with trim and Null handling
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.StringCommonology.ToUpperWithTrim(System.String)">
+            <summary>
+            Return the Upper string with trim and Null handling
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.StringCommonology.StripHtml(System.String)">
+            <summary>
+            Return the string without the HTML
+            </summary>
+            <param name="html">HTML string which want to strip the HTML</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.StringCommonology.RemoveSpecialCharacters(System.String)">
+            <summary>
+            Remove the special characters from the string
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

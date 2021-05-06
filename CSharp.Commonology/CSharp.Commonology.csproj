@@ -9,8 +9,8 @@
     <RepositoryUrl>https://github.com/hardik-sanghavi/CSharp.Commonology</RepositoryUrl>
     <Copyright />
     <PackageTags>CommonExtensions CommonMethods CSharpCommonology Commonology</PackageTags>
-    <PackageLicenseExpression></PackageLicenseExpression>
-    <Version>1.0.2</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.3</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Add some other functions</PackageReleaseNotes>
   </PropertyGroup>
