@@ -266,6 +266,27 @@
             <param name="predicate">A function to test each element for a condition.</param>
             <returns>true if element not null and has any element which is pass the test in the specified predicate.</returns>
         </member>
+        <member name="T:CSharp.Commonology.ObjectCommonology">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CSharp.Commonology.ObjectCommonology.ToSerializeString``1(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.ObjectCommonology.ToDeserializeObject``1(System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="jsonString"></param>
+            <returns></returns>
+        </member>
         <member name="T:CSharp.Commonology.StringCommonology">
             <summary>
             Different types of common extension methods and function regarding to string
@@ -297,6 +318,15 @@
             Remove the special characters from the string
             </summary>
             <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharp.Commonology.StringCommonology.ToInitilizeCharacters(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Retunrn the initilize character by length exmaple: source is xyz and length =1 than return x
+            </summary>
+            <param name="source"></param>
+            <param name="length"></param>
+            <param name="isUperCase"></param>
             <returns></returns>
         </member>
     </members>

@@ -49,5 +49,25 @@ namespace CSharp.Commonology
         {
             return Regex.Replace((str ?? string.Empty), "[^a-zA-Z0-9_.]+", "", RegexOptions.Compiled);
         }
+
+        /// <summary>
+        /// Retunrn the initilize character by length exmaple: source is xyz and length =1 than return x
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="length"></param>
+        /// <param name="isUperCase"></param>
+        /// <returns></returns>
+        public static string ToInitilizeCharacters(this string source, int length, bool isUperCase = true)
+        {
+            source = (source ?? String.Empty);
+            if (source.Length >= length)
+            {
+                if (isUperCase)
+                    source = source.Substring(0, length).ToUpper();
+                else
+                    source = source.Substring(0, length);
+            }
+            return source;
+        }
     }
 }
