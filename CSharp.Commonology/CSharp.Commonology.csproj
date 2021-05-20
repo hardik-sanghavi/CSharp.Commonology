@@ -8,9 +8,9 @@
     <Description>C# Common extensions and methods.</Description>
     <RepositoryUrl>https://github.com/hardik-sanghavi/CSharp.Commonology</RepositoryUrl>
     <Copyright />
-    <PackageTags>CommonExtensions CommonMethods CSharpCommonology Commonology</PackageTags>
+    <PackageTags>CommonExtensions CommonMethods CSharpCommonology Commonology .netcore common</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Add some other functions</PackageReleaseNotes>
   </PropertyGroup>
