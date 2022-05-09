@@ -15,7 +15,7 @@ namespace CSharp.Commonology
         /// <typeparam name="T">Convert the datatable into list of this object</typeparam>
         /// <param name="dt">Datatable that needs to convert</param>
         /// <returns></returns>
-        public static List<T> CovertToList<T>(this DataTable dt)
+        public static List<T> ConvertToList<T>(this DataTable dt)
         {
             List<T> data = new List<T>();
 
